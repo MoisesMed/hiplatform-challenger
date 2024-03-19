@@ -1,0 +1,7 @@
+.MainTitle > span {
+  font-size: 2em;
+}
+
+.MainTitle > div {
+  margin-top: 12px;
+}

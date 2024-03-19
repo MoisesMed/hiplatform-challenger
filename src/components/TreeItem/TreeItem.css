@@ -1,0 +1,84 @@
+.TreeItemDiv {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.TreeItem {
+  padding: 4px 0;
+}
+
+.TreeItem > span {
+  margin: 0px 8px 0px 2px;
+}
+
+.TreeItem .hidden {
+  display: none;
+}
+
+.TreeItemDiv > label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+}
+
+.TreeItemDiv > label > span {
+  align-items: center;
+  cursor: pointer;
+  display: block;
+  gap: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+.TreeItemDiv > button {
+  padding: 4px 8px;
+  height: fit-content;
+  font-size: 12px;
+}
+
+.TreeSubItem {
+  border-left: 1px solid white;
+  margin-left: 11px;
+}
+
+.TreeSubItemRow {
+  display: flex;
+}
+
+.TreeArrow {
+  width: 20px;
+  height: 16px;
+  border-bottom: 1px solid white;
+}
+
+.TreeCheckBox {
+  position: relative;
+}
+
+.TreeCheckBox {
+  width: 13px;
+  height: 13px;
+}
+
+.TreeCheckBox.partialCheck::before {
+  content: "―";
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-size: 6px;
+  line-height: 1;
+}
+
+@media (min-width: 450px) {
+  .TreeItemDiv > label > span {
+    display: flex;
+    gap: 4px;
+    min-width: max-content;
+    width: 100%;
+  }
+}
