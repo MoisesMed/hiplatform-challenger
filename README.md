@@ -20,9 +20,10 @@ Para instalar o projeto, siga estes passos:
 
 1. Clone o repositório:
    git clone https://github.com/seu-usuario/hiplatform-challenge.git
+   
    cd hiplatform-challenge
 
-2. Instale as dependências:
+3. Instale as dependências:
    npm install
 
 ## Executando o Projeto
