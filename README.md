@@ -4,7 +4,7 @@ Este projeto é uma implementação de um componente de árvore interativa como 
 
 ## Demonstração ao Vivo
 
-A demonstração ao vivo do projeto está hospedada na Vercel: [https://vercel.hiplatform](https://vercel.hiplatform)
+A demonstração ao vivo do projeto está hospedada na Vercel: [https://hiplatform.vercel.app/](https://hiplatform.vercel.app/)
 
 ## Funcionalidades
 
@@ -19,10 +19,13 @@ A demonstração ao vivo do projeto está hospedada na Vercel: [https://vercel.h
 Para instalar o projeto, siga estes passos:
 
 1. Clone o repositório:
+   
    git clone https://github.com/seu-usuario/hiplatform-challenge.git
+   
    cd hiplatform-challenge
 
-2. Instale as dependências:
+3. Instale as dependências:
+ 
    npm install
 
 ## Executando o Projeto
@@ -34,7 +37,9 @@ Isso iniciará o servidor de desenvolvimento e abrirá o projeto no seu navegado
 
 ## Executando os Testes
 
-Para executar a suíte de testes, utilize o comando:
+Para executar os testes, utilize o comando:
 npm test
+
+Desenvolvido por @MoisesMed
 
 Obrigado por conferir este projeto!
