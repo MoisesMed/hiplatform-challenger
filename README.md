@@ -25,7 +25,7 @@ Para instalar o projeto, siga estes passos:
    cd hiplatform-challenge
 
 3. Instale as dependências:
-4. 
+ 
    npm install
 
 ## Executando o Projeto
