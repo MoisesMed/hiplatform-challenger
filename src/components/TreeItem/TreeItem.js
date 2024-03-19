@@ -10,6 +10,8 @@ const TreeItem = ({ data, item, changeJson }) => {
     changeJson(item.id, isChecked);
   };
 
+  const hasChildren = item.children && Object.keys(item.children).length > 0;
+
   return (
     <div className="TreeItem">
       <div className="TreeItemDiv">
@@ -27,13 +29,13 @@ const TreeItem = ({ data, item, changeJson }) => {
             {item?.name}
           </span>
         </label>
-        {item.children && Object.keys(item.children).length > 0 && (
+        {hasChildren && (
           <button onClick={() => setIsChildrenVisible(!isChildrenVisible)}>
             {isChildrenVisible ? "Hide" : "Show"}
           </button>
         )}
       </div>
-      {isChildrenVisible && item.children && (
+      {isChildrenVisible && hasChildren && (
         <div className="TreeSubItem">
           {Object.entries(item.children).map(([childId, childData]) => (
             <div className="TreeSubItemRow" key={childId}>
