@@ -40,4 +40,5 @@ Isso iniciará o servidor de desenvolvimento e abrirá o projeto no seu navegado
 Para executar os testes, utilize o comando:
 npm test
 
+Desenvolvido por @MoisesMed
 Obrigado por conferir este projeto!
