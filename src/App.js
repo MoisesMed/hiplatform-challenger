@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import TreeView from "./components/TreeView/TreeView";
 import dataJson from "./data.json";
 import { useEffect, useState } from "react";
@@ -32,6 +33,7 @@ function App() {
   return (
     <div>
       <TreeView data={data} setData={setData} />
+      <Footer />
     </div>
   );
 }

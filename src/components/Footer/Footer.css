@@ -1,0 +1,14 @@
+.Footer {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: end;
+}
+
+.Footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.Footer a:hover {
+  color: #99c8ff;
+}
