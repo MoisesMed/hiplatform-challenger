@@ -19,11 +19,13 @@ A demonstração ao vivo do projeto está hospedada na Vercel: [https://vercel.h
 Para instalar o projeto, siga estes passos:
 
 1. Clone o repositório:
+   
    git clone https://github.com/seu-usuario/hiplatform-challenge.git
    
    cd hiplatform-challenge
 
 3. Instale as dependências:
+4. 
    npm install
 
 ## Executando o Projeto
