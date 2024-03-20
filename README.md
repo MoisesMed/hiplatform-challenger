@@ -20,7 +20,7 @@ Para instalar o projeto, siga estes passos:
 
 1. Clone o repositório:
    
-   git clone https://github.com/seu-usuario/hiplatform-challenge.git
+   git clone https://github.com/seu-usuario/hiplatform-challenger.git
    
    cd hiplatform-challenge
 
