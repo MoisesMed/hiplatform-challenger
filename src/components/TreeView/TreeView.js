@@ -28,7 +28,7 @@ const TreeView = ({ data, setData }) => {
     }
   };
 
-  const updateParentIfAllSiblingsChecked = (currentItem, items) => {
+  const updateParentIfChecked = (currentItem, items) => {
     if (currentItem.parentId) {
       const parentItem = findItem(items, currentItem.parentId);
       if (parentItem && parentItem.children) {
@@ -40,7 +40,7 @@ const TreeView = ({ data, setData }) => {
         );
         parentItem.isChecked = allSiblingsChecked;
         parentItem.partialCheck = someSiblingsChecked && !allSiblingsChecked;
-        updateParentIfAllSiblingsChecked(parentItem, items);
+        updateParentIfChecked(parentItem, items);
       }
     }
   };
@@ -51,7 +51,7 @@ const TreeView = ({ data, setData }) => {
       const itemToUpdate = findItem(newData, itemId);
       if (itemToUpdate) {
         updateItemAndChildren(itemToUpdate, isChecked);
-        updateParentIfAllSiblingsChecked(itemToUpdate, newData);
+        updateParentIfChecked(itemToUpdate, newData);
       }
       return newData;
     });
@@ -60,7 +60,6 @@ const TreeView = ({ data, setData }) => {
   return (
     <div className="MainTitle">
       <span>Árvore de Seleção</span>
-
       {Object.entries(data).map(([itemId, itemData]) => (
         <TreeItem
           data={data}

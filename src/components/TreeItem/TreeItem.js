@@ -5,7 +5,7 @@ import "./TreeItem.css";
 const TreeItem = ({ data, item, changeJson }) => {
   const [isChildrenVisible, setIsChildrenVisible] = useState(false);
 
-  const handleCheckboxChange = (event) => {
+  const handleCheckbox = (event) => {
     const isChecked = event.target.checked;
     changeJson(item.id, isChecked);
   };
@@ -17,10 +17,9 @@ const TreeItem = ({ data, item, changeJson }) => {
       <div className="TreeItemDiv">
         <label>
           <input
-            style={{ background: "red" }}
             type="checkbox"
             checked={item.isChecked || false}
-            onChange={handleCheckboxChange}
+            onChange={handleCheckbox}
             className={`TreeCheckBox ${
               item.partialCheck ? "partialCheck" : ""
             }`}
